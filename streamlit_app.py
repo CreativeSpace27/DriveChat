@@ -97,7 +97,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="gemini-header">TailorTalk</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="gemini-header">DriveChat</h1>', unsafe_allow_html=True)
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
