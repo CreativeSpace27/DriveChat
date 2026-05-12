@@ -133,7 +133,7 @@ if prompt := st.chat_input("Ask a question..."):
 
         try:
             response = requests.post(
-                "https://drivechat-15ca.onrender.com/",
+                "https://drivechat-15ca.onrender.com/chat",
                 json={"message": prompt},
                 timeout=60
             )
