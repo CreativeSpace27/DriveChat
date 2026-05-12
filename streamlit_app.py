@@ -97,16 +97,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# 3. Header
 st.markdown('<h1 class="gemini-header">TailorTalk</h1>', unsafe_allow_html=True)
 
-# 4. Initialize Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hello. I've synced with your Drive. How can I help?"}
     ]
 
-# 5. Display Chat History
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         if message["role"] == "user":
@@ -116,7 +113,6 @@ for message in st.session_state.messages:
 
         st.markdown(message["content"])
 
-# 6. Chat Logic
 if prompt := st.chat_input("Ask a question..."):
 
     # User Message
@@ -137,7 +133,7 @@ if prompt := st.chat_input("Ask a question..."):
 
         try:
             response = requests.post(
-                "http://localhost:8000/chat",
+                "https://drivechat-15ca.onrender.com/",
                 json={"message": prompt},
                 timeout=60
             )
