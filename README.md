@@ -1,6 +1,6 @@
-# TailorTalk: AI-Powered Google Drive Assistant
+# DriveChat: AI-Powered Google Drive Assistant
 
-TailorTalk is an intelligent document discovery agent that transforms how users interact with their Google Drive. Built with a "Backend-as-Truth" architecture, it leverages Large Language Models (LLMs) to navigate complex file hierarchies, perform deep-content searches, and provide direct access links through a natural, conversational interface.
+DriveChat is an intelligent document discovery agent that transforms how users interact with their Google Drive. Built with a "Backend-as-Truth" architecture, it leverages Large Language Models (LLMs) to navigate complex file hierarchies, perform deep-content searches, and provide direct access links through a natural, conversational interface.
 
 ## 🚀 Live Demo
 * **Frontend:** https://drivechat-fyj4zzcra8hbk6wpfqbdbh.streamlit.app/
